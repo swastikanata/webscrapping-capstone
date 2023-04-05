@@ -66,10 +66,11 @@ Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerja
     * Dari halaman tersebut carilah `harga harian`, dan `tanggal`
     * Bualah plot pergerakan kurs USD 
     
-3. (Hard) Data film yang rilis di tahun 2021 dari `https://www.imdb.com/search/title/?release_date=2021-01-01,2021-12-31`
+3. (Hard) Data pekerjaan data di indonesia pada  `https://www.kalibrr.id/job-board/te/data/1`
 
-    * Dari Halaman tersebut carilah `judul` , `imdb rating` , `metascore`, dan `votes`
-    * Buatlah plot dari 7 film paling populer di tahun 2021.
+    * Dari Halaman tersebut carilah `title pekerjaan` , `lokasi pekerjaan` , `tanggal pekerjaan di post dan dealine submit permohonan`, dan `perusahaan`
+    * tariklah 15 halaman
+    * Buatlah plot dari jumlah pekerjaan berdasarkan lokasi.
 
 
 Happy learning! 
