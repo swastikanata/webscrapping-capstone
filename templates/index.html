@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 <body>
 	<div class="container-fluid">
@@ -15,37 +15,48 @@
 					<br>
 					<br>
 					<h1 class="mb-2">
-						This is the title 
+						Data Job in Kalibbr 
 					</h1>
 					<h3>
-						Reported Period: insert the data period here
+						Reported Period: April 12th 2023
 					</h3>
 					<br>
 				</div>
 			</div>
-		<div class="row">
-			<div class="col-md-4 col-lg-4 col-sm-4">
-				<div class="card card-stats">
-					<div class="card-header">
-						<div class="card-icon">
-							<i></i>
+			<div class="row">
+				<div class="col-md-4 col-lg-4 col-sm-4">
+					<div class="card card-stats">
+						<div class="card-header">
+							<div class="card-icon">
+								<i></i>
+							</div>
+							<h2 class="card-title">
+								225
+							</h2>
+							<h4 class="card-category">
+								job openings scrapped
+							</h4>
 						</div>
-						<h2 class="card-title">
-							{{ card_data }}
-						</h2>
-						<h4 class="card-category">
-							card title here
-						</h4>
 					</div>
 				</div>
 			</div>
-		</div>
+			
 		<div class="row">
 			<div class="col-md-12 col-lg-12 col-sm-12">
 				<div class="tab">
-					<button class="tablinks" onclick="openTab(event, 'profile') " id="defaultOpen">by Profile
+					<button class="tablinks" onclick="openTab(event, 'location') " id="defaultOpen">by Location
 					</button>
-					<button class="tablinks" onclick="openTab(event, 'Own')">(Create-Your-Own)
+					<button class="tablinks" onclick="openTab(event, 'company')">by Company
+					</button>
+					<button class="tablinks" onclick="openTab(event, 'day')">by Day Posted
+					</button>
+					<button class="tablinks" onclick="openTab(event, 'employment')">by Employment Type
+					</button>
+					<button class="tablinks" onclick="openTab(event, 'category')">by Category
+					</button>
+					<button class="tablinks" onclick="openTab(event, 'industry')">by Industry
+					</button>
+					<button class="tablinks" onclick="openTab(event, 'position')">by Position
 					</button>
 				</div>
 			</div>
@@ -53,18 +64,47 @@
 		<div class="row">
 			<div class="col-md-12 col-lg-12 col-sm-12">
 				<!-- Tab content -->
-				<div id="profile" class="tabcontent">
+				<div id="location" class="tabcontent">
 					<br>
-					<h3 style="color: #333333;text-align:center">plot title here</h3>
-					<div class="img-container"">
-						{% if funded_plot != None %}
-					  <img src="data:image/png;base64,{{ plot_result }}" >
-						{% endif %}
+					<div class="img-container">
+						<embed type="text/html" src="static/plots/location.html" width="800" height="500">
 					</div>
 				</div>
-				<div id="Own" class="tabcontent">
-				  <!-- Define your own analysis for extra challange -->
-
+				<div id="company" class="tabcontent">
+					<br>
+					<div class="img-container">
+						<embed type="text/html" src="static/plots/company.html" width="800" height="500">
+					</div>
+				</div>
+				<div id="day" class="tabcontent">
+					<br>
+					<div class="img-container">
+						<embed type="text/html" src="static/plots/day.html" width="800" height="500">
+					</div>
+				</div>
+				<div id="employment" class="tabcontent">
+					<br>
+					<div class="img-container">
+						<embed type="text/html" src="static/plots/employment.html" width="800" height="500">
+					</div>
+				</div>
+				<div id="category" class="tabcontent">
+					<br>
+					<div class="img-container">
+						<embed type="text/html" src="static/plots/category.html" width="800" height="500">
+					</div>
+				</div>
+				<div id="industry" class="tabcontent">
+					<br>
+					<div class="img-container">
+						<embed type="text/html" src="static/plots/industry.html" width="800" height="500">
+					</div>
+				</div>
+				<div id="position" class="tabcontent">
+					<br>
+					<div class="img-container">
+						<embed type="text/html" src="static/plots/position.html" width="800" height="500">
+					</div>
 				</div>
 			</div>
 		</div>
