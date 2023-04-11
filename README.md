@@ -15,7 +15,7 @@ Atau cukup menginstall requirements.txt dengan cara berikut
 pip install -r requirements.txt
 ```
 
-## Rubics
+## Rubrics
 
 - Environment preparation (2 points)
 - Finding the right key to scrap the data  & Extracting the right information (5 points)
